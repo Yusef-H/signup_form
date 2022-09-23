@@ -1,0 +1,99 @@
+@font-face {
+    font-family: my-font;
+    src: url("Norse-Bold.otf");
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.side-img{
+    background-image: url("cosmic-timetraveler--SFhuMwFClk-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 45vw;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.bg{
+    background-color: rgb(255, 255, 255);
+    opacity: 0.20;
+    height: 10vh;
+    flex:1;
+    margin-top: 17vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg > p{
+    font-family: my-font;
+    font-size: min(5vh, 4vw);
+}
+
+
+.form-section{
+    margin-top: 2vh;
+    width: max(55vw, 900px);
+    padding: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.form-section > form{
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    height: 65vh;
+    margin-top: 5vh;
+}
+.form-section > p{
+    font-size: 1.75vh;
+}
+form>legend{
+    font-size: 3vh;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+form > fieldset{
+    height: 50vh;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+fieldset > label{
+    font-size: 1.75vh;
+}
+fieldset > input{
+    height: 2.5vh;
+    width: 30vw;
+}
+
+.submit{
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+}
+.submit-btn{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    font-weight: bold;
+    width: 20vw;
+    height: 5vh;
+    background-color: bisque;
+    border-radius: 8px;
+}
+.submit-btn:hover{
+    background-color: rgba(252, 182, 96, 0.795);
+}
+
