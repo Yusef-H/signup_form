@@ -6,10 +6,13 @@
 body{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     background-color: antiquewhite;
 }
+
+
 
 .side-img{
     background-image: url("cosmic-timetraveler--SFhuMwFClk-unsplash.jpg");
@@ -17,7 +20,7 @@ body{
     background-position: center;
     background-size: cover;
     height: 100vh;
-    /* width: 100vw; */
+    width: 50vw;
 
     display: flex;
     justify-content: center;
@@ -36,15 +39,17 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+
 .bg > p{
     font-family: my-font;
-    font-size: min(5vh, 4vw);
+    font-size: calc(20px + 4vmin);
 }
 
 
 .form-section{
     margin-top: 2vh;
-    width: 50vw;
+    width: 40vw;
     padding: 30px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -102,6 +107,25 @@ input:focus{
     background: rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width:760px){
+    .side-img, .bg{
+        width: 100vw;
+    }
+    .form-section{
+        width: 100vw;
+    }
+    label{
+        width: 50vw;
+    }
+    
+}
+@media (max-width:360px){
+    input{
+        font-size: 10px;
+    }
+    
+}
+
 .submit{
     padding: 2vh;
     display: flex;
@@ -111,7 +135,7 @@ input:focus{
     font-family: 'Courier New', Courier, monospace;
     font-size: 2vh;
     font-weight: bold;
-    width: 20vw;
+    width: calc(40px + 10vw);
     height: 5vh;
     background-color: bisque;
     border-radius: 8px;
