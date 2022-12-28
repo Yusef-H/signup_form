@@ -17,7 +17,7 @@ body{
     background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 45vw;
+    /* width: 100vw; */
 
     display: flex;
     justify-content: center;
@@ -28,11 +28,11 @@ body{
     background-color: rgb(255, 255, 255);
     opacity: 0.20;
     height: 10vh;
+    width: 50vw;
     flex:1;
     margin-top: 17vh;
-    
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
 }
@@ -44,7 +44,7 @@ body{
 
 .form-section{
     margin-top: 2vh;
-    width: max(55vw, 900px);
+    width: 50vw;
     padding: 30px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -52,31 +52,54 @@ body{
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     padding: 30px;
-    height: 65vh;
+    height: 60vh;
     margin-top: 5vh;
 }
 .form-section > p{
-    font-size: 1.75vh;
+    font-size: calc(7px + 1vmin);
 }
 form>legend{
-    font-size: 3vh;
+    font-size: calc(12px + 2vmin);
     font-weight: bold;
     margin-bottom: 5px;
 }
-form > fieldset{
-    height: 50vh;
-    padding: 20px;
+form > ul{
+    
     border-radius: 8px;
+    height: 40vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    
 }
-fieldset > label{
-    font-size: 1.75vh;
+ul > li {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-fieldset > input{
-    height: 2.5vh;
-    width: 30vw;
+
+label{
+    font-size: calc(7px + 1vmin);
+    width: 200px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+input{
+    flex: 1;
+    font-family: inherit;
+    font-size: 20px;
+    height: 30px;
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input:focus{
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .submit{

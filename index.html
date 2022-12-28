@@ -17,26 +17,34 @@
         <p class="credit"></p>
     </div>
     <div class="form-section">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan, justo et molestie facilisis, mi lectus varius urna, id venenatis lorem leo at purus. Curabitur leo risus, malesuada id nunc vel, dictum tincidunt odio. Donec commodo nec lacus ut sodales. Maecenas cursus ipsum sed sem fermentum, eu vulputate mauris mattis. Nulla vestibulum odio a orci condimentum congue. Mauris non leo leo. Cras dignissim elementum erat nec tincidunt. Ut vitae nulla ante.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan, justo et molestie facilisis, mi lectus varius urna, id venenatis lorem leo at purus. Curabitur leo risus, malesuada id nunc vel, dictum tincidunt odio. Donec commodo nec lacus ut sodales. Maecenas cursus ipsum sed sem fermentum, eu vulputate mauris mattis.
 
         </p>
-        <form action="">
+        <form action="" method="post">
             <legend> Let's do this! </legend>
-            <fieldset>
-                <label for="first_name">First Name:*</label>
-                <input type="text" id="first_name" name="first_name" required>
+            <ul>
+                <li>
+                    <label for="first_name">First Name:*</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Bob.." required>
+                </li>
+                <li>
+                    <label for="last_name">Last Name:* </label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Philips.." required>
+                </li>
+                <li>
+                    <label for="email">Email:*</label>
+                    <input type="email" name="email" id="email" placeholder="youremail@email.com" required>
+                </li>
+                <li>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0123456789">
+                </li>
+                <li>
+                    <label for="user_password">Password:*</label>
+                    <input type="password" id="user_password" name="user_password" required>
+                </li>
+            </ul>
             
-                <label for="last_name">Last Name:*</label>
-                <input type="text" id="last_name" name="last_name" required>
-                <label for="email">Email:* </label>
-                <input type="email" name="email" id="email" required>
-
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
-
-                <label for="user_password">Password:*</label>
-                <input type="password" id="user_password" name="user_password" required>
-            </fieldset>
             <div class="submit">
                 <button class="submit-btn" type="submit">Submit</button>
             </div>
